@@ -10,10 +10,15 @@ adapted to run on the MIT Satori PowerAI Cluster
 6. Click the **Launch** button to fire off a Jupyterlab session
 7. Click the **Connect to Jupyter** button when it appears in a few moments
 8. When Jupyter comes up for the first time, you may be prompted to select a kernel, If so, choose the default **Python 3 PowerAI**
-9. Use the left navigation pane to find the git repo directory (**pytorchstyletransfer_satori**) you downloaded in step 4. . click into it and dopuble click on the Jupyter notebook **TorchTransfer.jpynb**
-10. ron the Jupyter frames one by one  using the 'play' arrow button to test.. or go to the menu option **Run -> Run all cells**
-11. intermediate  results will appear at the bottom as the program runs. 
-12. **Enjoy !!!**
+9. Use the left navigation pane to find the git repo directory (**pytorchstyletransfer_satori**) you downloaded in step 4. . click into it and dopuble click on the Jupyter notebook **TorchTransfer.ipynb**
+10. before you start running the code select **File -> New -> Terminal** in the Jupyterlab menu bar. 
+11. In the terminal that is started paste the command ``watch -n0.1 nvidia-smi``.
+12. Now switch to the tab for the **TorchTransfer.ipynb** notebook
+13. run the Jupyter frames one by one  using the 'play' arrow button to test.. or go to the menu option **Run -> Run all cells**
+14. intermediate  results will appear at the bottom as the program runs. 
+15. while the program is running (especially cell 15 in the notebook ``output = run_style_transfer(cnn, cnn_normalization_mean, cnn_normalization_std, ``...) switch
+    to the Terminal tab you created earlier. You should see that the GPU temperature and Power have increased to around 70C aand 200W. 
+16. **Enjoy !!!** -- but also think about the energy you are using and how you might reduce it
 
 
 ## to add your own pictures
