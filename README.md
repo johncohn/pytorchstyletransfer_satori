@@ -13,7 +13,7 @@ adapted to run on the MIT Satori PowerAI Cluster
 9. Use the left navigation pane to find the git repo directory (**pytorchstyletransfer_satori**) you downloaded in step 4. . click into it and dopuble click on the Jupyter notebook **TorchTransfer.ipynb**
 10. before you start running the code select **File -> New -> Terminal** in the Jupyterlab menu bar. 
 11. In the terminal that is started paste the command ``watch -n0.1 nvidia-smi``.
-12. Now switch to the tab for the **TorchTransfer.ipynb** notebook
+12. Now switch back to the tab for the **TorchTransfer.ipynb** notebook
 13. run the Jupyter frames one by one  using the 'play' arrow button to test.. or go to the menu option **Run -> Run all cells**
 14. intermediate  results will appear at the bottom as the program runs. 
 15. while the program is running (especially cell 15 in the notebook ``output = run_style_transfer(cnn, cnn_normalization_mean, cnn_normalization_std, ``...) switch
